@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.blackjohnnywizard" version="1.0.0" name="Blackjohnny Wizard" provider-name="blackj48">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="el">Blackjohnny Build Wizard</summary>
+        <description lang="el">Εργαλείο εγκατάστασης και διαχείρισης Build του Blackjohnny για Kodi</description>
+        <platform>all</platform>
+    </extension>
+</addon>
