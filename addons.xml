@@ -1,0 +1,10 @@
+<addons>
+  <addon id="plugin.program.blackjohnnywizard" name="Blackjohnny Wizard" version="1.0.0" provider-name="blackj48">
+    <extension point="xbmc.addon.program" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="el">Οδηγός εγκατάστασης του Blackjohnny Build</summary>
+      <description lang="el">Ρυθμισμένος wizard για το Blackjohnny Build</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+</addons>
