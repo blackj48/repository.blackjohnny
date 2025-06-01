@@ -1,23 +1,34 @@
-<addon id="plugin.program.blackjohnnywizard" version="1.0.0" name="BlackJohnny Repository" provider-name="blackj48">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+    id="plugin.program.blackjohnnywizard"
+    name="BlackJohnny Wizard"
+    version="1.0.0"
+    provider-name="blackj48">
 
-  <extension point="xbmc.addon.repository" library="default.py">
-    <info compressed="true">addons.xml</info>
-    <checksum>addons.xml.md5</checksum>
-    <datadir zip="true">.</datadir>
-  </extension>
+    <!-- ο Kodi μαθαίνει ότι είναι wizard (program) -->
+    <extension point="xbmc.addon.program"
+               library="default.py"                   <!-- αρχείο εκκίνησης -->
+               name="BlackJohnny Wizard"
+               icon="icon.png"
+               fanart="resources/fanart.jpg" />
 
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <license>LICENSE.txt</license>
-  </assets>
+    <!-- Προαιρετικά: metadata για εμφάνιση -->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="el">Οδηγός εγκατάστασης BlackJohnny build</summary>
+        <description lang="el">
+            Κατεβάζει και εγκαθιστά αυτόματα το BlackJohnny build,
+            προσφέρει reset ρυθμίσεων κ.λπ.
+        </description>
+        <platform>all</platform>
+    </extension>
 
-  <extension point="xbmc.addon.metadata">
-    <summary>Repository for BlackJohnny builds and addons</summary>
-    <description>Provides BlackJohnny wizard and builds</description>
-    <platform>all</platform>
-  </extension>
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <license>LICENSE.txt</license>
+    </assets>
 </addon>
