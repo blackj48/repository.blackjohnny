@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="skin.blackjohnny.max"
+       version="1.0.2"
+       name="BLACKJOHNNY MAX"
+       provider-name="Blackjohnny">
+  <requires>
+    <import addon="xbmc.gui" version="5.17.0"/>
+  </requires>
+  <extension point="xbmc.gui.skin"
+             debugging="false"
+             effectslowdown="0.8">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">BLACKJOHNNY MAX</summary>
+    <summary lang="el_GR">BLACKJOHNNY MAX</summary>
+    <description lang="en_GB">Black and gold Kodi skin. Display engine only: no bundled content, no third-party add-on dependencies. Works on a clean Kodi install.</description>
+    <description lang="el_GR">Skin σε μαύρο και χρυσό. Μόνο display engine: χωρίς ενσωματωμένο περιεχόμενο και χωρίς εξαρτήσεις από third-party add-ons. Λειτουργεί σε καθαρή εγκατάσταση Kodi.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <news>Δες 00_PROJECT/CHANGELOG.md</news>
+  </extension>
+</addon>
+<addon id="service.blackjohnny.max"
+       version="1.0.2"
+       name="BLACKJOHNNY MAX Service"
+       provider-name="Blackjohnny">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.python.script" library="script.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Background maintenance for BLACKJOHNNY MAX</summary>
+    <summary lang="el_GR">Συντήρηση παρασκηνίου για το BLACKJOHNNY MAX</summary>
+    <description lang="en_GB">Scheduled maintenance plus privacy-first opt-in local telemetry. Telemetry v0.1 has no network transport and records only a strict anonymous allowlist in the local add-on profile.</description>
+    <description lang="el_GR">Προγραμματισμένη συντήρηση και privacy-first ανώνυμο telemetry με ρητό opt-in. Το telemetry v0.1 δεν μεταδίδει τίποτα μέσω Internet και γράφει μόνο αυστηρά επιτρεπόμενα πεδία τοπικά.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+  </extension>
+</addon>
+<addon id="plugin.program.blackjohnnywizard"
+       version="1.0.2"
+       name="BLACKJOHNNY MAX Wizard"
+       provider-name="Blackjohnny">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Install, update, backup and restore for BLACKJOHNNY MAX</summary>
+    <summary lang="el_GR">Εγκατάσταση, ενημέρωση, backup και επαναφορά για το BLACKJOHNNY MAX</summary>
+    <description lang="en_GB">Atomic build installation with a crash-safe ledger and automatic rollback. Backups use an explicit whitelist and carry a manifest.</description>
+    <description lang="el_GR">Ατομική εγκατάσταση build με ledger ανθεκτικό σε crash και αυτόματο rollback. Τα backup χρησιμοποιούν ρητή whitelist και φέρουν manifest.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+  </extension>
+</addon>
+<addon id="repository.blackjohnny"
+       version="1.0.2"
+       name="BLACKJOHNNY Repository"
+       provider-name="Blackjohnny">
+  <extension point="xbmc.addon.repository" name="BLACKJOHNNY">
+    <dir>
+      <info compressed="false">https://blackj48.github.io/repository.blackjohnny/k21/addons.xml</info>
+      <checksum>https://blackj48.github.io/repository.blackjohnny/k21/addons.xml.md5</checksum>
+      <datadir zip="true">https://blackj48.github.io/repository.blackjohnny/k21/addons</datadir>
+      <hashes>sha256</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">BLACKJOHNNY add-on repository</summary>
+    <summary lang="el_GR">Αποθετήριο πρόσθετων BLACKJOHNNY</summary>
+    <description lang="en_GB">Official distribution point for BLACKJOHNNY MAX components.</description>
+    <description lang="el_GR">Επίσημο σημείο διανομής των στοιχείων του BLACKJOHNNY MAX.</description>
+    <platform>all</platform>
+    <license>Proprietary</license>
+  </extension>
+</addon>
+</addons>

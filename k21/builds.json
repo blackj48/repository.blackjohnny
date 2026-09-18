@@ -1,0 +1,42 @@
+{
+  "builds": [
+    {
+      "name": "BlackjohnnyMax",
+      "version": "1.0.2",
+      "target": "k21",
+      "date": "2026-09-18",
+      "status": "stable",
+      "url": "https://blackj48.github.io/repository.blackjohnny/k21/BlackjohnnyMax-1.0.2-k21.zip",
+      "checksum": "560f7380493c815cef68664a930817e9a57b486908938867fb4eb9344e8e96ae",
+      "artifact_zip_sha256": "560f7380493c815cef68664a930817e9a57b486908938867fb4eb9344e8e96ae",
+      "source_manifest_sha256": "ed80edfbad61118cd011b2a72df0cea39563a096783a3f8587bf5ea2ef17fa0f",
+      "compression": "deflate",
+      "size": 7909556,
+      "component_bytes": {
+        "plugin.program.blackjohnnywizard": 39714,
+        "repository.blackjohnny": 1122,
+        "service.blackjohnny.max": 73383,
+        "skin.blackjohnny.max": 9080813
+      }
+    },
+    {
+      "name": "BlackjohnnyMax",
+      "version": "1.0.1",
+      "target": "k21",
+      "date": "2026-09-17",
+      "status": "stable",
+      "url": "https://blackj48.github.io/repository.blackjohnny/k21/BlackjohnnyMax-1.0.1-k21.zip",
+      "checksum": "bcd7de216094e0301ea891d357da62d3489395a84e01ae0ad1e08d91d12a686f",
+      "artifact_zip_sha256": "bcd7de216094e0301ea891d357da62d3489395a84e01ae0ad1e08d91d12a686f",
+      "source_manifest_sha256": "0a82445ffdc0a7a1ea7b1c4b4eda20684876629286f7457a3054174f60a345f5",
+      "compression": "deflate",
+      "size": 7907410,
+      "component_bytes": {
+        "plugin.program.blackjohnnywizard": 39714,
+        "repository.blackjohnny": 1122,
+        "service.blackjohnny.max": 73383,
+        "skin.blackjohnny.max": 9075358
+      }
+    }
+  ]
+}
