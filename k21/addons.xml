@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="skin.blackjohnny.max"
-       version="1.0.2"
+       version="1.0.3"
        name="BLACKJOHNNY MAX"
        provider-name="Blackjohnny">
   <requires>
@@ -27,7 +27,7 @@
   </extension>
 </addon>
 <addon id="service.blackjohnny.max"
-       version="1.0.2"
+       version="1.0.3"
        name="BLACKJOHNNY MAX Service"
        provider-name="Blackjohnny">
   <requires>
@@ -45,7 +45,7 @@
   </extension>
 </addon>
 <addon id="plugin.program.blackjohnnywizard"
-       version="1.0.2"
+       version="1.0.3"
        name="BLACKJOHNNY MAX Wizard"
        provider-name="Blackjohnny">
   <requires>
@@ -64,7 +64,7 @@
   </extension>
 </addon>
 <addon id="repository.blackjohnny"
-       version="1.0.2"
+       version="1.0.3"
        name="BLACKJOHNNY Repository"
        provider-name="Blackjohnny">
   <extension point="xbmc.addon.repository" name="BLACKJOHNNY">

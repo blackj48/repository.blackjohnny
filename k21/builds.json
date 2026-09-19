@@ -2,6 +2,25 @@
   "builds": [
     {
       "name": "BlackjohnnyMax",
+      "version": "1.0.3",
+      "target": "k21",
+      "date": "2026-09-19",
+      "status": "stable",
+      "url": "https://blackj48.github.io/repository.blackjohnny/k21/BlackjohnnyMax-1.0.3-k21.zip",
+      "checksum": "0a71fc0fd438800cf7ecfe0efca87752c10fcfaa108ce79e449275e911bfbf73",
+      "artifact_zip_sha256": "0a71fc0fd438800cf7ecfe0efca87752c10fcfaa108ce79e449275e911bfbf73",
+      "source_manifest_sha256": "f8ea7b86057b0e47b86f33fc95437485004af3f49bfbe0e6659761db9daa0bd1",
+      "compression": "stored",
+      "size": 9257761,
+      "component_bytes": {
+        "plugin.program.blackjohnnywizard": 39731,
+        "repository.blackjohnny": 1122,
+        "service.blackjohnny.max": 73383,
+        "skin.blackjohnny.max": 9080813
+      }
+    },
+    {
+      "name": "BlackjohnnyMax",
       "version": "1.0.2",
       "target": "k21",
       "date": "2026-09-18",
