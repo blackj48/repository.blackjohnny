@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="skin.blackjohnny.max"
-       version="1.0.3"
+       version="1.0.4"
        name="BLACKJOHNNY MAX"
        provider-name="Blackjohnny">
   <requires>
@@ -27,7 +27,7 @@
   </extension>
 </addon>
 <addon id="service.blackjohnny.max"
-       version="1.0.3"
+       version="1.0.4"
        name="BLACKJOHNNY MAX Service"
        provider-name="Blackjohnny">
   <requires>
@@ -45,7 +45,7 @@
   </extension>
 </addon>
 <addon id="plugin.program.blackjohnnywizard"
-       version="1.0.3"
+       version="1.0.4"
        name="BLACKJOHNNY MAX Wizard"
        provider-name="Blackjohnny">
   <requires>
@@ -64,7 +64,7 @@
   </extension>
 </addon>
 <addon id="repository.blackjohnny"
-       version="1.0.3"
+       version="1.0.4"
        name="BLACKJOHNNY Repository"
        provider-name="Blackjohnny">
   <extension point="xbmc.addon.repository" name="BLACKJOHNNY">
@@ -83,5 +83,30 @@
     <platform>all</platform>
     <license>Proprietary</license>
   </extension>
+</addon>
+<addon id="script.blackjohnny.subsync"
+       version="1.0.4"
+       name="BLACKJOHNNY Auto Subtitle Sync"
+       provider-name="Blackjohnny">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="el_GR">Συγχρονισμός του εξωτερικού υποτίτλου με τον ήχο, με ένα κουμπί.</summary>
+    <summary lang="en_GB">One-button synchronisation of the external subtitle with the audio.</summary>
+    <description lang="el_GR">Συγχρονίζει τον ενεργό εξωτερικό υπότιτλο (SRT) με τον ήχο ενός βίντεο αποθηκευμένου στη συσκευή. Κρατά το αρχικό αρχείο και επιτρέπει αναίρεση. Δεν λειτουργεί με ροή από το διαδίκτυο. Χρειάζεται τη μηχανή συγχρονισμού ffsubsync, που εγκαθίσταται χωριστά.</description>
+    <description lang="en_GB">Synchronises the active external subtitle (SRT) with the audio of a video stored on this device. Keeps the original file and offers Undo. Does not work with internet streams. Needs the ffsubsync engine, installed separately.</description>
+    <platform>windows</platform>
+    <license>BLACKJOHNNY code; external ffsubsync engine installed separately</license>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.png</fanart>
+    </assets>
+    <news>Greek labels and messages. The buttons appear only with a video stored on this device and the engine installed. Same version as the build.</news>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
 </addon>
 </addons>
