@@ -1,54 +1,85 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackjohnny Repository</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            margin: 0;
-            padding: 2rem;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #00e6e6;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .button {
-            background-color: #00b3b3;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .button:hover {
-            background-color: #009999;
-        }
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #ccc;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BLACKJOHNNY MAX — αποθετήριο και οδηγίες εγκατάστασης για Kodi 21.">
+  <title>BLACKJOHNNY MAX | Kodi Repository</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101010; --panel:#191919; --line:#373020; --gold:#e2bd49; --text:#f5f5f5; --muted:#c5c5c5; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui, sans-serif; }
+    main, footer { width:min(100% - 2rem, 68rem); margin-inline:auto; }
+    header { padding:3rem 0 2rem; border-bottom:1px solid var(--line); }
+    .brand { color:var(--gold); font-weight:800; font-size:0.875rem; letter-spacing:.12em; }
+    h1 { font-size:clamp(2rem, 7vw, 3.8rem); line-height:1.15; margin:.65rem 0; letter-spacing:-.035em; }
+    h2 { font-size:1.35rem; margin:0 0 .75rem; }
+    p { margin:.5rem 0 1rem; }
+    .lead { max-width:42rem; color:var(--muted); font-size:1.1rem; }
+    .tag { display:inline-block; border:1px solid var(--line); border-radius:2rem; padding:.2rem .75rem; color:var(--gold); font-size:.85rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:.75rem; margin:1.5rem 0 0; }
+    a { color:var(--gold); overflow-wrap:anywhere; text-underline-offset:.2em; }
+    .button { display:inline-block; padding:.75rem 1.15rem; background:var(--gold); color:#15110a; font-weight:750; border:1px solid var(--gold); border-radius:.45rem; text-decoration:none; }
+    .secondary { background:transparent; color:var(--gold); }
+    a:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+    section { margin-top:1.5rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr)); gap:1rem; }
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:.75rem; padding:1.4rem; min-width:0; }
+    .source { background:#111; color:var(--text); border:1px solid var(--line); padding:.8rem; border-radius:.3rem; overflow-wrap:anywhere; user-select:all; }
+    li { margin-bottom:.55rem; }
+    .muted { color:var(--muted); }
+    footer { border-top:1px solid var(--line); margin-top:2.5rem; padding:1.5rem 0 2rem; color:var(--muted); font-size:.9rem; }
+  </style>
 </head>
 <body>
-    <h1>Καλώς ήρθες στο Blackjohnny Repository</h1>
-    <p>Χρησιμοποίησε τον παρακάτω σύνδεσμο για εγκατάσταση στο Kodi:</p>
-    <a href="https://blackj48.github.io/repository.blackjohnny/" class="button" target="_blank">Εγκατάσταση στο Kodi</a>
-    <footer>
-        Blackjohnny Build &copy; 2025 - Powered by GitHub Pages
-    </footer>
+<main>
+  <header>
+    <div class="brand">BLACKJOHNNY</div>
+    <h1>BLACKJOHNNY MAX</h1>
+    <p class="lead">Αποθετήριο του BLACKJOHNNY MAX για εγκατάσταση και ενημέρωση των πρόσθετων του build.</p>
+    <span class="tag">Kodi 21 · Omega</span>
+    <div class="actions">
+      <a class="button" href="k21/">Εγκατάσταση για Kodi 21</a>
+      <a class="button secondary" href="k21/addons/repository.blackjohnny/">Κατάλογος Repository ZIP</a>
+    </div>
+  </header>
+  <section class="panel" aria-labelledby="install-heading">
+    <h2 id="install-heading">Εγκατάσταση στο Kodi</h2>
+    <p>Στη Διαχείριση αρχείων του Kodi, πρόσθεσε την ακόλουθη διεύθυνση ως πηγή:</p>
+    <p class="source"><code>https://blackj48.github.io/repository.blackjohnny/k21/</code></p>
+    <ol>
+      <li>Άνοιξε τις Ρυθμίσεις → Διαχείριση αρχείων → Προσθήκη πηγής.</li>
+      <li>Εισάγαγε τη διεύθυνση και ονόμασε την πηγή BLACKJOHNNY MAX.</li>
+      <li>Στα Πρόσθετα επίλεξε Εγκατάσταση από αρχείο ZIP και άνοιξε την πηγή.</li>
+      <li>Επίλεξε το ZIP του repository. Στη συνέχεια επίλεξε Εγκατάσταση από αποθετήριο → BLACKJOHNNY Repository.</li>
+    </ol>
+    <p class="muted">Αν ζητηθεί, ενεργοποίησε τις Άγνωστες πηγές μόνο εφόσον εμπιστεύεσαι το αποθετήριο. Κράτησε αντίγραφο των ρυθμίσεων πριν από αναβάθμιση.</p>
+  </section>
+  <section class="grid" aria-label="Σύνδεσμοι διανομής">
+    <article class="panel">
+      <h2>Εκδόσεις</h2>
+      <p>Κατάλογος των ήδη δημοσιευμένων builds, με πληροφορίες έκδοσης και τιμές SHA-256.</p>
+      <a href="k21/builds.json">Κατάλογος builds (JSON)</a>
+    </article>
+    <article class="panel">
+      <h2>Repository feed</h2>
+      <p>Αρχεία που χρησιμοποιεί το Kodi για ενημερώσεις.</p>
+      <ul>
+        <li><a href="k21/addons.xml">addons.xml</a></li>
+        <li><a href="k21/addons.xml.md5">Checksum index</a></li>
+      </ul>
+    </article>
+    <article class="panel">
+      <h2>Παλαιότερη διανομή</h2>
+      <p>Ο σύνδεσμος διατηρείται για παλαιότερες εγκαταστάσεις. Για Kodi 21 προτίμησε τον κατάλογο παραπάνω.</p>
+      <a href="repository.blackjohnny.zip">repository.blackjohnny.zip (παλαιό)</a>
+    </article>
+  </section>
+  <section class="panel">
+    <h2>Σχετικά με τη διανομή</h2>
+    <p>Το BLACKJOHNNY MAX είναι ανεξάρτητο έργο για το Kodi. Το αποθετήριο δεν παρέχει συνδρομές, λογαριασμούς ή τηλεοπτικά streams. Οι δοκιμαστικές εκδόσεις δεν διατίθενται μέσω αυτής της σελίδας.</p>
+  </section>
+</main>
+<footer>BLACKJOHNNY MAX · Αποθετήριο διανομής · GitHub Pages</footer>
 </body>
 </html>
